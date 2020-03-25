@@ -1,0 +1,21 @@
+{
+  "name": "electron-project",
+  "version": "1.0.0",
+  "description": "information about your system",
+  "main": "src/index.js",
+  "dependencies": {
+    "electron": "^8.0.1",
+    "electron-handlebars": "^2.0.0",
+    "electron-packager": "^14.2.1",
+    "electron-prebuilt": "^1.4.13",
+    "electron-reload": "^1.5.0",
+    "fsevents": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
