@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+        
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            var title = document.querySelectorAll('title')[0]
+
+            title.innerHTML = `SYSTEM INFO [${process.env.username}` + ` ${process.env.userdomain}]`
+        }
+    </script>
+    <script defer="" type="text/javascript" src="../static/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    
+  </head>
+  <body>    
+    <div style="width: 100%" class="mb-2">
+        <nav class="navbar navbar-inverse bg-dark" >    
+            <div class="navbar-header">       
+                <span class="lead text-light">SYSTEM INFORMATION</span>  
+            </div>   
+        </nav>                   
+    </div>
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-md-6">
+            <div class="info">
+                <h4 class="lead">Basic Information</h4>
+                <div>
+                    <section class="user">
+                        <span class="set">user: </span>
+                        <code></code>
+                    </section>
+                    <section class="pc">
+                        <span class="set">domain: </span>
+                        <code></code>
+                    </section>
+                    <section class="op-sys">
+                        <span class="set">arch: </span>
+                        <code></code>
+                    </section>
+                    <section class="processor">
+                        <span class="set">processor: </span>
+                        <code></code>
+                    </section>
+                    <section class="os">
+                        <span class="set">platform: </span>
+                        <code></code>
+                    </section>
+                    <section class="mem">
+                        <span class="set">total memory: </span>
+                        <code></code>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 divisor">
+            <img src="" style="width: 110%;" class="os-log">
+        </div>
+        </div>
+        <button class="btn btn-danger" onclick="salir();">EXIT/SALIR</button>
+        <script type="text/javascript">
+            function salir(){
+                app.quit()
+            }
+        </script>
+    </div>
+  </body>
+</html>
